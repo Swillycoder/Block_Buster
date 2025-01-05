@@ -1,6 +1,6 @@
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
-const backgroundMusic = document.getElementById('music');
+//const backgroundMusic = document.getElementById('music');
 
 canvas.width = 500;
 canvas.height = 500;
@@ -388,9 +388,9 @@ addEventListener('keydown', ({key}) => {
             break
         case 'Enter':
             keys.enter.pressed = true
-            const backgroundMusic = new Audio('audio/techno.mp3');
-            backgroundMusic.loop = true;
-            backgroundMusic.play();
+           // const backgroundMusic = new Audio('audio/techno.mp3');
+            //backgroundMusic.loop = true;
+            //backgroundMusic.play();
             if (gameOver) {
                 gameOver = false;
                 animate();
